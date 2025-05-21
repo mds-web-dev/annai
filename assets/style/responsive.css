@@ -1,0 +1,410 @@
+/*--------------------------------------------------------------
+# Common Screens
+--------------------------------------------------------------*/
+@media (min-width: 250px) and (max-width: 350px) {
+}
+
+@media (min-width: 250px) and (max-width: 475px) {
+  p,
+  .p {
+    text-align: justify !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 567px) {
+  .section-title {
+    font-size: 1.85rem;
+  }
+}
+
+@media (min-width: 290px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/*--------------------------------------------------------------
+# Title 
+--------------------------------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-title {
+    font-size: 2.75rem;
+    padding: 15px 30px;
+  }
+
+  .main-title-2 {
+    font-size: 2.75rem;
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: 290px) and (max-width: 575px) {
+  .main-title {
+    font-size: 2.75rem;
+    padding: 15px 30px;
+  }
+
+  .main-title-2 {
+    font-size: 1.75rem;
+    padding: 15px 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navbar 
+--------------------------------------------------------------*/
+
+@media (min-width: 290px) and (max-width: 991px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 0rem !important;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*--------------------------------------------------------------
+# Home -
+--------------------------------------------------------------*/
+
+@media (min-width: 250px) and (max-width: 1350px) {
+  .carousel-img {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-slider {
+    width: 100%;
+    height: 65vh !important;
+    background-position: center center !important;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 767px) {
+  .home-slider {
+    width: 100%;
+    height: 55vh !important;
+    background-position: center center !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 567px) {
+  .home-slider {
+    width: 100%;
+    height: 45vh !important;
+    background-position: bottom center !important;
+  }
+
+  .my-carousel-1 .carousel-item img {
+    width: 100% !important;
+    height: 32.5vh !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1130px) {
+  .hom-abt {
+    font-size: 14px !important;
+  }
+}
+
+/* Call to Action */
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .btn-cta {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+@media (min-width: 290px) and (max-width: 991px) {
+  .get-in-touch-img {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 290px) and (max-width: 1199px) {
+  .contact-img {
+    height: 100%;
+  }
+
+  .contact-form-content {
+    height: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+@media (min-width: 250px) and (max-width: 576px) {
+  .specialty-card {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .specialty-card:hover {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #f5e6cc 0%, #d4a5a5 100%);
+  }
+}
+
+@media (min-width: 250px) and (max-width: 767px) {
+  .founder-image {
+    height: auto;
+  }
+
+  .founder-name {
+    font-size: 1.3rem;
+  }
+
+  .founder-designation {
+    font-size: 1rem;
+  }
+  .card-body .founder-designation {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .why-choose-card {
+    height: 425px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .abt-annai {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .abt-annai {
+    font-size: 16px !important;
+  }
+}
+
+/* Responsive adjustments for our achievements section */
+@media (max-width: 767.98px) {
+  .achievement-card {
+    text-align: center !important;
+    padding: 1.25rem; /* Adjust padding for mobile */
+  }
+  .achievement-icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+  .achievement-card h5 {
+    font-size: 1.3rem;
+  }
+  .achievements-section-custom-bg {
+    border-radius: 0px !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Testimonial Section
+--------------------------------------------------------------*/
+
+@media (min-width: 290px) and (max-width: 575px) {
+  .testimonial-card-1 {
+    border-right: 0px solid #ccc;
+  }
+
+  .testimonial-card-2 {
+    border-right: 0px solid #ccc;
+  }
+
+  .testimonial-card-3 {
+    border-right: 0px solid #ccc;
+  }
+
+  .testimonial-card-4 {
+    border-right: 0px solid #ccc;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .testimonial-card-1 {
+    border-right: 1px solid #ccc;
+  }
+
+  .testimonial-card-2 {
+    border-right: 0px solid #ccc;
+  }
+
+  .testimonial-card-3 {
+    border-right: 1px solid #ccc;
+  }
+
+  .testimonial-card-4 {
+    border-right: 0px solid #ccc;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card-content {
+    height: 125px;
+  }
+}
+
+@media (min-width: 290px) and (max-width: 767px) {
+  .testimonial-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .testimonial-card-content {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Service section
+--------------------------------------------------------------*/
+
+@media (min-width: 250px) and (max-width: 575px) {
+  .service-card .card-body {
+    height: auto;
+    padding: 25px 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+
+@media (min-width: 250px) and (max-width: 575px) {
+  .contact-content {
+    margin-top: 1rem;
+  }
+
+  .img-container {
+    margin-top: 0rem !important;
+  }
+
+  .contact-link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 991px) {
+  .contact-parallax-content {
+    height: 100%;
+  }
+
+  .contact-form {
+    margin-left: 0px;
+    height: 100%;
+  }
+
+  .contact-info-card-content {
+    height: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+@media (min-width: 1063px) and (max-width: 1269px) {
+  .footer-img {
+    width: 20%;
+  }
+
+  .foot-svg-txt {
+    font-size: 26px;
+    width: 260px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1063px) {
+  .footer-img {
+    width: 20%;
+  }
+
+  .foot-svg-txt {
+    font-size: 26px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1025px) {
+  .footer-img {
+    width: 20%;
+  }
+
+  .foot-svg-txt {
+    font-size: 26px;
+    width: 230px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .footer-text {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .foot-info-detail {
+    border-right: 0px solid var(--light-theme);
+  }
+
+  .contact-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 290px) and (max-width: 575px) {
+  .company-link {
+    font-size: 17px !important;
+    margin-bottom: 1rem;
+  }
+
+  .foot-info-detail {
+    border-right: 0px solid var(--light-theme);
+  }
+
+  .contact-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-card-text {
+    font-size: 17px !important;
+    color: var(--text-color);
+  }
+}
+
+/* Founder page icon disable on hover for desktop screen */
+@media (min-width: 992px) {
+  .founder-info-btn {
+    display: none;
+  }
+}
