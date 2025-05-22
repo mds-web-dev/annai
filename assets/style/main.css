@@ -1837,17 +1837,40 @@ Slider Gallery
     margin-bottom: 0; /* Remove default margin if any */
 }
 
-@media (max-width: 575.98px) { /* Target screens smaller than Bootstrap's sm breakpoint */
+@media (max-width: 767.98px) {
     .service-item {
-        padding: 15px;
-        /* Consider flex-direction: column; text-align: center; if side-by-side is too cramped */
-        /* For now, let's try reducing spacing first */
+        flex-direction: column;
+        align-items: center;
     }
 
     .service-item-image-wrapper {
-        margin-right: 15px;
+        margin-right: 0; /* Override desktop margin */
+        margin-bottom: 20px;
+        width: 150px; /* Or a suitable width for tablet, e.g., 30% or max-width: 180px */
+                     /* Using 150px to match desktop image size but centered */
+    }
+
+    .service-item-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) { /* Target screens smaller than Bootstrap's sm breakpoint */
+    .service-item {
+        padding: 15px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items when stacked */
+    }
+
+    .service-item-image-wrapper {
+        margin-right: 0; /* Remove side margin */
+        margin-bottom: 20px; /* Add space below image */
         width: 100px; /* Adjusted width for small screens */
         /* padding: 15px; /* Reduced padding for the icon circle - No longer needed */
+    }
+
+    .service-item-content {
+        text-align: center; /* Center the text content */
     }
 
     /*
