@@ -1785,26 +1785,36 @@ Slider Gallery
     border-left-color: var(--secondary-color); /* Change accent color on hover */
 }
 
-.service-item-icon-wrapper {
+.service-item-image-wrapper {
     margin-right: 25px; /* More space between icon and text */
-    padding: 20px; /* Generous padding for the icon */
-    background-color: var(--primary-color);
-    border-radius: 50%; /* Circular background */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     flex-shrink: 0; /* Prevent icon wrapper from shrinking */
-    transition: background-color 0.3s ease;
+    width: 150px; /* Control the image area size */
 }
 
+.service-item-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Rounded corners for the image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover .service-item-image-wrapper img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/*
 .service-item:hover .service-item-icon-wrapper {
-    background-color: var(--secondary-color); /* Change icon bg on item hover */
+    background-color: var(--secondary-color); /* Change icon bg on item hover * /
 }
+*/
 
+/*
 .service-item-icon-wrapper i {
-    font-size: 2.25rem; /* Larger icon */
+    font-size: 2.25rem; /* Larger icon * /
     color: var(--light-theme);
 }
+*/
 
 .service-item-content {
     flex-grow: 1;
@@ -1834,14 +1844,17 @@ Slider Gallery
         /* For now, let's try reducing spacing first */
     }
 
-    .service-item-icon-wrapper {
+    .service-item-image-wrapper {
         margin-right: 15px;
-        padding: 15px; /* Reduced padding for the icon circle */
+        width: 100px; /* Adjusted width for small screens */
+        /* padding: 15px; /* Reduced padding for the icon circle - No longer needed */
     }
 
+    /*
     .service-item-icon-wrapper i {
-        font-size: 1.8rem; /* Slightly smaller icon */
+        font-size: 1.8rem; /* Slightly smaller icon * /
     }
+    */
 
     .service-item-title {
         font-size: 1.5rem; /* Slightly smaller title */
