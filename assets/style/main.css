@@ -1699,6 +1699,7 @@ Slider Gallery
   text-align: center;
 }
 
+/*
 .service-card {
   background-color: var(--light-theme);
   border: none;
@@ -1708,44 +1709,149 @@ Slider Gallery
   margin-bottom: 30px;
   overflow: hidden;
 }
+*/
 
+/*
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
+*/
 
+/*
 .service-card .icon-container {
-  background-color: #FFFFFF; /* White background for icon container */
-  color: var(--primary-color); /* Primary color for the icon itself */
+  background-color: #FFFFFF; /* White background for icon container * /
+  color: var(--primary-color); /* Primary color for the icon itself * /
   font-size: 2.5rem;
   padding: 20px;
   text-align: center;
-  transition: border-color 0.3s ease; /* Added for border hover effect */
+  transition: border-color 0.3s ease; /* Added for border hover effect * /
 }
+*/
 
+/*
 .service-card .icon-container i {
-  transition: transform 0.3s ease; /* Added for icon hover effect */
+  transition: transform 0.3s ease; /* Added for icon hover effect * /
 }
+*/
 
+/*
 .service-card:hover .icon-container {
-  border: 1px solid var(--primary-color); /* Added border on card hover */
+  border: 1px solid var(--primary-color); /* Added border on card hover * /
 }
+*/
 
+/*
 .service-card:hover .icon-container i {
-  transform: scale(1.1); /* Scale icon on card hover */
+  transform: scale(1.1); /* Scale icon on card hover * /
 }
+*/
 
+/*
 .service-card .card-body {
   min-height: 175px;
   padding: 20px 20px;
   text-align: center;
 }
+*/
 
 .service-card .card-title {
   color: var(--theme-blue);
   font-weight: bold;
   margin-bottom: 15px;
 }
+
+/* Service List Styles */
+.service-list-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start; /* Align icon to the top of the text block */
+    margin-bottom: 30px;
+    padding: 25px; /* Increased padding for a richer feel */
+    background-color: #f8f9fa; /* A very light grey, almost white, for subtlety */
+    border-left: 5px solid var(--primary-color); /* Accent border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* Softer shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-5px) scale(1.01); /* Subtle lift and scale */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-left-color: var(--secondary-color); /* Change accent color on hover */
+}
+
+.service-item-icon-wrapper {
+    margin-right: 25px; /* More space between icon and text */
+    padding: 20px; /* Generous padding for the icon */
+    background-color: var(--primary-color);
+    border-radius: 50%; /* Circular background */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent icon wrapper from shrinking */
+    transition: background-color 0.3s ease;
+}
+
+.service-item:hover .service-item-icon-wrapper {
+    background-color: var(--secondary-color); /* Change icon bg on item hover */
+}
+
+.service-item-icon-wrapper i {
+    font-size: 2.25rem; /* Larger icon */
+    color: var(--light-theme);
+}
+
+.service-item-content {
+    flex-grow: 1;
+}
+
+.service-item-title {
+    font-family: 'crimson-text', serif;
+    color: var(--theme-blue);
+    margin-top: 0; /* Remove default margin if any */
+    margin-bottom: 10px; /* Space below title */
+    font-size: 1.75rem; /* Larger title for elegance */
+    font-weight: 600;
+}
+
+.service-item-description {
+    font-family: 'parkinsans-regular', sans-serif;
+    color: var(--text-color);
+    line-height: 1.65; /* Improved line height for readability */
+    font-size: 1.1rem; /* Standard description size, can be 1.1rem if it looks better */
+    margin-bottom: 0; /* Remove default margin if any */
+}
+
+@media (max-width: 575.98px) { /* Target screens smaller than Bootstrap's sm breakpoint */
+    .service-item {
+        padding: 15px;
+        /* Consider flex-direction: column; text-align: center; if side-by-side is too cramped */
+        /* For now, let's try reducing spacing first */
+    }
+
+    .service-item-icon-wrapper {
+        margin-right: 15px;
+        padding: 15px; /* Reduced padding for the icon circle */
+    }
+
+    .service-item-icon-wrapper i {
+        font-size: 1.8rem; /* Slightly smaller icon */
+    }
+
+    .service-item-title {
+        font-size: 1.5rem; /* Slightly smaller title */
+    }
+
+    .service-item-description {
+        font-size: 1rem; /* Slightly smaller description */
+    }
+}
+/* End Service List Styles */
 
 /*--------------------------------------------------------------
   # Gallery Icon 
